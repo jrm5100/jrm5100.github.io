@@ -1,0 +1,51 @@
+# The base URL of the site; the only required configuration variable.
+base_url = "https://mcguigan.dev"
+
+# The site title and description; used in feeds by default.
+title = "John McGuigan"
+description = ""
+
+# The default language; used in feeds.
+default_language = "en"
+
+# The site theme to use.
+theme = "hermit_zola"
+
+# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+output_dir = "docs"
+
+[extra]
+home_subtitle = "Senior Bioinformatics Engineer"
+
+footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+hermit_menu = [
+    { link = "/posts", name = "Posts" },
+    { link = "/about", name = "About" }
+]
+
+hermit_social = [
+    { name = "twitter", link = "https://twitter.com/realjmcguigan" },
+    { name = "github", link = "https://github.com/jrm5100/" },
+    { name = "linkedin", link = "https://www.linkedin.com/in/johnrmcguigan/" }
+]
+
+
+
+[extra.highlightjs]
+enable = true
+clipboard = true
+theme = "vs2015"
+
+[extra.disqus]
+enable = false
+# Take this from your Disqus account
+shortname = "my-supa-dupa-blog"
+
+[extra.author]
+name = "John McGuigan"
+email = "jrm5100@gmail.com"
+
+[extra.google_analytics]
+enable = false
+id = "UA-4XXXXXXX-X"
