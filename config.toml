@@ -11,9 +11,6 @@ default_language = "en"
 # The site theme to use.
 theme = "hermit_zola"
 
-# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
-output_dir = "docs"
-
 [extra]
 home_subtitle = "Senior Bioinformatics Engineer"
 
