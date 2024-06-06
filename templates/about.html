@@ -1,0 +1,42 @@
+{% extends "page.html" %}
+
+{% block main %}
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <h1>{{ page.title }}</h1>
+	</header>
+
+	<div class="content">
+  <section class="experience">
+    <h2>Experience</h2>
+    {% set experiences = load_data(path="data/experience.toml") %}
+    {% for experience in experiences.experience %}
+      <div class="experience-header">
+          <h3 class="experience-title">{{ experience.title }}</h3>
+          <div class="experience-meta">
+              <span class="experience-company">{{ experience.company }}</span>
+              <span class="experience-start-date">
+                  {{ experience.startDate | date(format="%B %Y") }}
+              </span>
+              <span> - </span>
+              <span class="experience-end-date">
+                {% if experience.endDate %}
+                  {{ experience.endDate | date(format="%B %Y") }}
+                {% else %}
+                  Present
+                {% endif %}
+            </span>
+          </div>
+      </div>
+      <div class="experience-description">
+          {{ experience.description }}
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+  </section>
+
+{% endblock main %}

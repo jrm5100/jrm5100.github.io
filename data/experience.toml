@@ -1,0 +1,23 @@
+# Order for display top-to-bottom
+
+[[experience]]
+title = "Senior Bioinformatics Engineer"
+company = "Twinstrand Biosciences"
+startDate = 2023-08-01
+endDate = 2024-05-01
+description = """
+Designed, wrote, tested, and documented high performance tooling to call haplotypes in error-corrected high throughput sequencing data and estimate sample proportions in mixed samples.
+"""
+
+[[experience]]
+title = "Bioinformatics Engineer II"
+company = "Twinstrand Biosciences"
+startDate = 2021-09-01
+endDate = 2023-08-01
+description = """
+Helped rewrite and validate legacy pipelines in Nextflow and worked to improve performance by over 20%.
+
+Wrote a multi-threaded python service which monitors for new sequencing runs, demultiplexes them, and uploads results to DnaNexus and/or AWS S3. This service included logging to a Slack bot and was deployed and managed using Ansible.
+
+Wrote high performance bioinformatics tools in Rust to generate VCF files from raw variant call data and to annotate variant calls according to specific requirements
+"""
