@@ -1,0 +1,60 @@
+{% extends "page.html" %}
+
+{% block main %}
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+    <header class="post-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    Senior Bioinformatics Engineer with 10+ years of experience analyzing high throughput sequencing (HTS) data (Illumina, etc). Proven ability to develop and optimize bioinformatics workflows, tools, and pipelines. Proficient in Python, R, Rust, Scala, and Nextflow. Strong background in software engineering best practices and cloud computing environments.
+
+    <div class="content">
+      <section class="experience" 
+               style="display: flex; flex-direction: column; gap: 20px;">
+        <h2>Experience</h2>
+        {% set experiences = load_data(path="data/experience.toml") %}
+        {% for experience in experiences.experience %}
+          <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%;">
+            <div class="experience-header" style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; color: black; display: flex; justify-content: space-between; align-items: center;"> 
+              <div style="text-align: left;"> 
+                <h3 class="experience-title" style="font-weight: bold; font-size: 1.2em; margin: 0; color: black;">{{ experience.title }}</h3>
+                <span class="experience-company">{{ experience.company }}</span>
+              </div>
+              <div class="experience-meta" style="font-size: 0.9em; color: black; text-align: right;">
+                <span class="experience-start-date">
+                  {{ experience.startDate | date(format="%B %Y") }}
+                </span>
+                <span> - </span>
+                <span class="experience-end-date">
+                  {% if experience.endDate %}
+                    {{ experience.endDate | date(format="%B %Y") }}
+                  {% else %}
+                    Present
+                  {% endif %}
+                </span>
+              </div>
+            </div>
+            <div class="experience-description" style="margin-top: 10px; line-height: 1.6; color: black;"> 
+              {{ experience.description }}
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+
+      <section class="education" 
+               style="display: flex; flex-direction: column; gap: 20px;">
+        <h2>Education</h2>
+        <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 100%;">
+          <h3 class="education-location" style="font-style: italic; margin-bottom: 5px; color: black;">Penn State University</h3>
+          <div class="education-meta" style="font-size: 0.9em; color: black;">
+            <span class="education-name">B.S., Biochemistry and Molecular Biology</span>
+            <span class="education-time">2005-2009</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </article>
+</main>
+{% endblock main %}
