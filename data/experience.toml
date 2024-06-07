@@ -21,3 +21,39 @@ Wrote a multi-threaded python service which monitors for new sequencing runs, de
 
 Wrote high performance bioinformatics tools in Rust to generate VCF files from raw variant call data and to annotate variant calls according to specific requirements
 """
+
+[[experience]]
+title = "Bioinformatics Engineer I"
+company = "Twinstrand Biosciences"
+startDate = 2021-07-01
+endDate = 2021-09-01
+description = """
+Quickly learned Scala and contributed to new features and bug fixes in high performance tools used for processing high throughout sequencing data"""
+
+[[experience]]
+title = "Programmer / Analyst 4"
+company = "Hall Lab @ Penn State University"
+startDate = 2019-03-01
+endDate = 2021-07-01
+description = """
+I was the programmer/Analyst for the Hall Lab at Penn State. I lead development of open-source software for cleaning, analyzing, and integrating multi-omic data including CLARITE and pandas-genomics. I also designed and managed the lab website."""
+
+[[experience]]
+title = "Senior Bioinformatics Manager"
+company = "Softgenetics LLC"
+startDate = 2017-08-01
+endDate = 2019-03-01
+description = """
+Promoted to senior manager position, requiring management of multiple programmers in the design and development of commercial software used for the analysis of high throughput sequencing data for forensic analysis
+As part of a small team, designed and developed high performance server-based commercial software for probabilistic mixture analysis of forensic samples using Markov Chain Monte Carlo strategies and Bayesian statistics"""
+
+[[experience]]
+title = "Biologist"
+company = "Softgenetics LLC"
+startDate = 2009-08-01
+endDate = 2017-08-01
+description = """
+Research and design new algorithms such as copy number variation (CNV) and mutation scoring for implementation in NextGENe software which is used by over 100 research labs.
+Write and maintain scripts to generate gigabytes of test data and analyze results from the software in order to ensure it is working as expected.
+Interact with customers everyday to explain results and guide them through using the software.
+Develop over a dozen application notes, webinars, and scientific posters used to demonstrate and market the software."""
